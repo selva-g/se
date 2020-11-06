@@ -16,61 +16,122 @@
   <body>
     
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Auronet</a>
-      <div class="d-block d-sm-none">
-        <label class="search pb-0 pt-1" for="inpt_search">
-                    <input id="inpt_search" type="text" />
-                 </label>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active ">
-              <a class="nav-link" href="#" title="Auronet Home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" title="About Auroville">About Auroville</a>
-            </li>
-            <li class="nav-item mr-4">
-              <a class="nav-link" href="http://localhost:4000/group" title="Groups in Auronet">Groups</a>
-            </li>
-            <li class="mx-auto d-none d-lg-block">
-              <label class="search pb-0 pt-1" for="inpt_search">
-                    <input id="inpt_search" type="text" />
-                 </label>
-            
-        
-            </li>
-            <li class="nav-item ml-4">
-              <a class="nav-link" href="#" title="Blogs">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" title="Auroville Directory">Directoy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" title="References">References</a>
-            </li>
-          </ul>
-          </div>
-          
-    </nav>
     <div class="container ">
       <!-- <section class="bg-white p-lg-5  m-lg-5 "> -->
-      
-          <form action="/search" class="form-inline">
-            <div class="form-group m-2" style="width: 50%;">
-            <input placeholder="Enter keyword to search" type="text" name="q" class="form-control" value="AVAG" style="width: 100%">
+        <div class="d-flex ">
+          <div class=" d-block d-sm-none ">
+            <input type="checkbox" id="checkbox" >
+          <label class="btnn" for="checkbox"><i class="fa fa-bars"></i> <span>Filters</span></label>
+          <div class="sidebar d-block d-sm-none">
+            <!-- <ul>
+                <a href="#"><li><i class="fa fa-tachometer"></i>Dashboard</li></a>
+                <a href="#"><li><i class="fa fa-lightbulb-o"></i>Widgets</li></a>
+                <a href="#" class="active"><li><i class="fa fa-line-chart"></i>Charts</li></a>
+                <a href="#"><li><i class="fa fa-television"></i>Front-End</li></a>
+                <a href="#"><li><i class="fa fa-send"></i>Email</li></a>
+                <a href="#"><li><i class="fa fa-wpforms"></i>Forms</li></a>
+                <a href="#"><li><i class="fa fa-paint-brush"></i>UI Elements</li></a>
+                <a href="#"><li><i class="fa fa-file-text-o"></i>Pages</li></a>
+                <a href="#"><li><i class="fa fa-globe"></i>Google Maps</li></a>
+            </ul> -->
+            <div class="p-2">
+              <!-- types section -->
+              <section class="my-3 ">
+                <div class="text-left border-bottom">    
+                  <div class="type "><h5 class="type-name"><a href="" class="text-blue"  ><i class="far fa-comments"></i>  Discussions (25)</a></h5></div>
+                  <div class="type "><h5 class="type-name"><a href="" class="text-blue" ><i class="fas fa-bullhorn"></i>  Announcements(34)</a></h5></div>
+                  <div class="type "><h5 class="type-name"><a href="" class="text-blue" ><i class="far fa-file"></i>  Reports((45)</a></h5></div>
+                  <div class="type "><h5 class="type-name"><a href="" class="text-blue" ><i class="fas fa-shopping-cart"></i>  Bazar(6)</a></h5></div>
+                  <div class="type "><h5 class="type-name"><a href="" class="text-blue" ><i class="fas fa-street-view"></i>  Events(2)</a></h5></div>
+                </div>
+              </section>
+              <!-- end of type -->
+  
+              <!-- groups section-->
+              <section class="my-3">
+                <div class="border-bottom">
+                  <!-- <h4>Groups</h4> -->
+                  <div class="text-left "> 
+                    <div class="wrapper">
+                      <ul class="partners__ul">
+                        <li><div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Working Group
+                      </label>
+                    </div></li>
+                        <li><div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Working Group
+                      </label>
+                    </div></li>
+                        <li><div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Working Group
+                      </label>
+                    </div></li>                  
+                                        
+                   </ul>
+                   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show more</button>
+                   <div id="demo" class="collapse">
+                    <ul class="partners__ul">
+                      <li><div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Working Group
+                    </label>
+                  </div></li>
+                      <li><div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Working Group
+                    </label>
+                  </div></li>
+                      <li><div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Working Group
+                    </label>
+                  </div></li>                  
+                                      
+                 </ul>
+                   </div>
+                      <!-- <button class="partners__button__a">Show More</button> -->
+                    </div>
+                  </div>
+                  </div>
+              </section>
+              <!-- end of groups section -->
+              <!-- time section -->
+              <section class="my-3">
+                <div>
+                  <!-- <h4>Show from..</h4> -->
+                  <div><a href="">All time</a></div>
+                  <div><a href="">Last 5 years</a></div>
+                  <div><a href="">Last one year</a></div>              
+                  
+                
+                </div>
+              </section>
+              <!--End of  time section -->
+            </div>
+        </div>
           </div>
-            <button type="submit" class="btn btn-primary">Search</button>
-          </form>
-   
-    
+          
+            <form action="/search" class="form-inline">
+              <div class="form-group size my-2" >
+              <input placeholder="Enter keyword to search" type="text" name="q" class="form-control" value="AVAG" style="width: 100%">
+            </div>
+              <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+            </form>
+     
+            
+        </div>          
         <div class="row ">
           <div class="col-sm-8 ">   
+            
             <!-- search result        -->
             <section class="search-result-item">
               <h3 class="mb-0"><a href="#" style="font-size: large;" >Auroville Village Action Group (AVAG)</a></h3>
@@ -125,7 +186,7 @@
             <!--End of search resultñ -->
             
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 d-none d-sm-block" >
             <div class="p-2">
               <!-- types section -->
               <section class="my-3 ">
@@ -214,21 +275,6 @@
         </div>
         
       <!-- </section> -->
-      <div id="mySidenav" class="sidenav" >
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="lib\learn_phoenix_web\templates\page\results.html">About Taalam</a>
-        <a href="#">Reports</a>
-        <a href="#">Discussions</a>
-        <a href="#">General</a>
-        <a href="#">File</a>
-        <a href="#">Newsletters</a>
-        <a href="#">Question</a>
-        <a href="#">General</a>
-      </div>
-      <!-- offcanvas menu -->
-    <a href="javascript:" id="offmenu" class="d-lg-none" ><span onclick="openNav()"><i class="fas fa-ellipsis-v"></i></span></a>  
-    <!--End of off canvas menu -->
     </div>
     
        <!-- Optional JavaScript -->

@@ -1,3 +1,12 @@
+/* navbar */
+.img-fluid{
+  height: 40px;
+  width:40px;
+}
+
+/*end of navbar */
+
+
 /*** COLORS ***/
 /*** DEMO ***/
 
@@ -122,7 +131,7 @@ a:hover{
   position: relative;
   margin-bottom: 10px;
 }
-/* show more */
+/* end of show more */
 
 
 /* search */
@@ -209,96 +218,143 @@ a:hover{
 }
 
 /* end of search */
+.size{
+  width: 500px;
+}
+
+@media screen and (max-width  : 550px) {
+  .size{
+    width: 200px;
+  }
+}
+
+/* sidebar */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
 
 
-/* sidbar */
-.sidenav {
-	height: 100%; /* 100% Full-height */
-	width: 0; /* 0 width - change this with JavaScript */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
-	top: 0;
-	left: 0;
-	background-color:white; /* Black*/
-	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 60px; /* Place content 60px from the top */
-	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 20px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-	color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-	transition: margin-left .5s;
-	padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
-  }
-  
- /* End of side bar */
 
- /* sidebaricon */
- /*Return offmenu*/
-#offmenu {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
-  width: 50px;
-  height: 50px;
-  display: block;
-  text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
-  
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+#checkbox, .btnn span { /* Hide the checkbox input & word "Menu" in the button */
+    display: none;
 }
-#offmenu i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 20px;
-  top: 13px;
-  font-size: 19px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+
+/* Menu button - starts */
+.btnn {
+  margin-top: 10px;
+    display: block;
+    background-color: white;
+    color: blue;
+    width: 35px;
+    height: 30px;
+    /* line-height: 50px; */
+    /* padding: 0 20px; */
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 0;
+    transition: width .3s ease-in-out;
 }
-#offmenu:hover {
-  background: rgba(0, 0, 0, 0.9);
+/* Menu button - ends */
+
+/* Sidebar - starts */
+.sidebar {
+    background-color: white;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    z-index: 1111;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-250px);
 }
-/* end of sidebaricon */
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar ul a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    color: #BAB5BD;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.sidebar ul a li i {
+    margin-right: 15px;
+}
+
+/* Add the word "New" to the second item and "2" to the third item */
+.sidebar ul a:nth-child(2)::after, .sidebar ul a:nth-child(3)::after {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -9px;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 7px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.sidebar ul a:nth-child(2)::after {
+    content: "New";
+    background-color: tomato;
+}
+
+.sidebar ul a:nth-child(3)::after {
+    content: "2";
+    background-color: #247D9E;
+}
+
+/* Add margin to the icon in the second item */
+.sidebar ul a:nth-child(2) li i {
+    margin-left: 4px;
+    margin-right: 19px;
+}
+
+.sidebar ul a:hover, .sidebar ul a.active {
+    background-color:white;
+    color: #fff;
+}
+
+.sidebar ul a:hover::before, .sidebar ul a.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #247D9E;
+    width: 4px;
+    height: 100%;
+}
+/* Sidebar - ends */
+
+/* Effect of showing the sidebar - starts */
+#checkbox:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
+#checkbox:checked + .btnn {
+    width: 250px;
+    padding: 0 20px;
+}
+
+#checkbox:checked + .btnn span { /* Show again the word "Menu" in the button */
+    display: inline;
+}
+/* Effect of showing the sidebar - ends */
+
+
+/* sidebar */
