@@ -1,3 +1,7 @@
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
 /* navbar */
 .img-fluid{
   height: 40px;
@@ -150,10 +154,12 @@ a:hover{
 }
 /*** STYLES ***/
 .search {
+
+  
   display: inline-block;
   position: relative;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   box-sizing: border-box;
   margin: 0px 8px 7px 0px;
   padding: 7px 9px 0px 9px;
@@ -180,6 +186,7 @@ a:hover{
 .search.active,
 .search:hover {
   width: 600px;
+  
   margin-right: 0px;
 
 }
@@ -228,14 +235,14 @@ a:hover{
 }
 
 /* sidebar */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;
-}
+} */
 
 
 

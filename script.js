@@ -19,6 +19,7 @@ $(document).ready(function() {
     }
     
     
+    
   });
   
   function onFadeComplete(){
@@ -51,3 +52,13 @@ $(document).ready(function() {
 	document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("main").style.marginLeft = "0";
   }
+
+  
+  $("#hov").hover(function(){
+   $(".hid").css("display", "none");
+   //console.log("sfssg");
+   
+    }, function(){
+   $(".hid").css("display", "block");
+    //console.log("alerting");
+  });
