@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="images/title.jpg">
 
+
+    <!-- Include Choices CSS -->
+    <link rel="stylesheet" href="choices.css">
+    <script src="https://joshuajohnson.co.uk/Choices/assets/scripts/choices.min.js?version=7.0.0"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -46,7 +51,7 @@
             
         
             </li>
-            <li class="nav-item ml-4 hid">
+            <li class="nav-item ml-lg-4 hid">
               <a class="nav-link" href="#" title="Blogs">Blogs</a>
             </li>
             <li class="nav-item hid">
@@ -163,16 +168,19 @@
             </div>
         </div>
           </div>
-          
+          <div class="mx-auto d-wrap">
             <form action="/search" class="form-inline">
               <div class="form-group size my-2" >
               <input placeholder="Enter keyword to search" type="text" name="q" class="form-control" value="AVAG" style="width: 100%">
             </div>
               <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-            </form>
-     
+            </form> 
+          </div>
+              
             
-        </div>          
+        </div> 
+        
+        
         <div class="row ">
           <div class="col-sm-8 ">   
             
@@ -249,58 +257,81 @@
                 <div class="border-bottom">
                   <!-- <h4>Groups</h4> -->
                   <div class="text-left "> 
-                    <div class="wrapper">
-                      <ul class="partners__ul">
-                        <li><div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Working Group
-                      </label>
-                    </div></li>
-                        <li><div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Working Group
-                      </label>
-                    </div></li>
-                        <li><div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Working Group
-                      </label>
-                    </div></li>                  
-                                        
-                   </ul>
-                   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show more</button>
-                   <div id="demo" class="collapse">
-                    <ul class="partners__ul">
-                      <li><div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                      Working Group
-                    </label>
-                  </div></li>
-                      <li><div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                      Working Group
-                    </label>
-                  </div></li>
-                      <li><div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                      Working Group
-                    </label>
-                  </div></li>                  
-                                      
-                 </ul>
-                   </div>
-                      <!-- <button class="partners__button__a">Show More</button> -->
-                    </div>
+                    <h5>Groups</h5>
+
+<!-- <div class="dropdown">
+  <label class="dropdown-label">se</label>
+  
+  <div class="dropdown-list">
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group-all" class="check-all checkbox-custom" id="checkbox-main"/>
+      <label for="checkbox-main" class="checkbox-custom-label">Select All</label>
+    </div>
+    
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_01"/>
+      <label for="checkbox-custom_01" class="checkbox-custom-label">Selection 1</label>
+    </div>
+    
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_02"/>
+      <label for="checkbox-custom_02" class="checkbox-custom-label">Selection 2</label>
+    </div>
+    
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_03"/>
+      <label for="checkbox-custom_03" class="checkbox-custom-label">Selection 3</label>
+    </div>
+    
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_04"/>
+      <label for="checkbox-custom_04" class="checkbox-custom-label">Selection 4</label>
+    </div>
+  </div>
+</div> -->
+  
+
+<div class="dropdown ">
+  <label class="dropdown-label">Groups</label>
+  
+  <div class="dropdown-list shadow">
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group-all" class="check-all checkbox-custom" id="checkbox-main1"/>
+      <label for="checkbox-main1" class="checkbox-custom-label">Select All</label>
+    </div>
+    
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_21"/>
+      <label for="checkbox-custom_21" class="checkbox-custom-label">Working group</label>
+    </div>
+    
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_22"/>
+      <label for="checkbox-custom_22" class="checkbox-custom-label">Fc</label>
+    </div>
+    
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_23"/>
+      <label for="checkbox-custom_23" class="checkbox-custom-label">BCC</label>
+    </div>
+    
+    <div class="checkbox">
+      <input type="checkbox" name="dropdown-group" class="check checkbox-custom" id="checkbox-custom_24"/>
+      <label for="checkbox-custom_24" class="checkbox-custom-label">TDC</label>
+    </div>
+  </div>
+</div>
+                    
                   </div>
                   </div>
               </section>
               <!-- end of groups section -->
+<!-- author keyword search -->
+<h1 class="title">Enter your keyword</h1>
+    <input class="form-control author" id="choices-text-remove-button" type="text"  placeholder="Enter something" />
+
+<!-- End of author keyword search -->
+
               <!-- time section -->
               <section class="my-3">
                 <div>
